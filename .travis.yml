@@ -28,6 +28,9 @@ env:
     # - IMAGEMAGICK_VERSION=commit_25553302a6d5f736b55e60109600dfbce5fbea48
 
 matrix:
+  include:
+    - php: 5.3
+      dist: precise
   exclude:
     - php: 5.3
       env: IMAGEMAGICK_VERSION=6.8.7-0
