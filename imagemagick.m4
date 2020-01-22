@@ -123,7 +123,7 @@ AC_DEFUN([IM_FIND_IMAGEMAGICK],[
   AC_MSG_RESULT([found in $IM_WAND_BINARY])
 
 # This is used later for cflags and libs
-  export PKG_CONFIG_PATH="${IM_IMAGEMAGICK_PREFIX}/${PHP_LIBDIR}/pkgconfig"
+  export PKG_CONFIG_PATH="${IM_IMAGEMAGICK_PREFIX}/${PHP_LIBDIR}/pkgconfig:${PKG_CONFG_PATH}"
   
 # Check version
 #
